@@ -1,0 +1,81 @@
+.table > :not(caption) > * > * {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.change-img {
+  font-size: 10px;
+}
+
+.main-img {
+  object-fit: cover;
+  height: 300px;
+}
+
+.user-img {
+  font-size: 150px;
+}
+
+.order-img {
+  width: 50%;
+  height: auto;
+  max-height: 300px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.table thead th {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: var(--bs-secondary-bg-subtle);
+  font-weight: 600;
+  border-bottom-width: 2px;
+}
+
+@media (max-width: 767px) {
+  .table > :not(caption) > * > * {
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+  }
+}
+
+.stat-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.status-square {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.form-switch-lg .form-check-input {
+  width: 2.5rem;
+  height: 1.25rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.form-switch-lg .form-check-input:checked {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.all-orders-link {
+  transition: opacity 0.2s;
+}
+
+.all-orders-link:hover {
+  opacity: 0.8;
+  color: var(--bs-primary) !important;
+  text-decoration: underline !important;
+}

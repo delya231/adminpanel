@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация | Админ-панель</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap-icons-1.13.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/auth.css">
+    <script src="/js/bootstrap.bundle.min.js" defer></script>
+    <script src="/js/theme.js" defer></script>
+</head>
+
+<body class="d-flex align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <div class="card shadow">
+                    <div class="card-header bg-transparent border-0 pt-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="fw-semibold mb-0"> Bloom</h3>
+
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-sun-fill"></i>
+                                <div class="form-check form-switch mb-0">
+                                    <input class="form-check-input theme-switch themeToggle" type="checkbox"
+                                        class="themeToggle">
+                                </div>
+                                <i class="bi bi-moon-fill"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="admin@example.com"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Пароль</label>
+                                <input type="password" class="form-control" id="password" placeholder="••••••" required>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="remember">
+                                <label class="form-check-label" for="remember">Запомнить меня</label>
+                            </div>
+                            <a href="index.html" type="submit" class="btn btn-primary w-100 py-2">Войти</a>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-4.0.0.slim.min.js"
+        integrity="sha256-8DGpv13HIm+5iDNWw1XqxgFB4mj+yOKFNb+tHBZOowc=" crossorigin="anonymous"></script>
+</body>
+
+</html>
